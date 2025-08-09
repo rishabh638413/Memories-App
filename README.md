@@ -25,4 +25,3 @@ Authentication is implemented using **JWT**, and users can only edit/delete/ the
 
 ---
 
-## 📂 Folder Structure
