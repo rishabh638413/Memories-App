@@ -1,0 +1,76 @@
+.appbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.logo-text {
+  font-weight: bold;
+  background: linear-gradient(45deg, #2196F3 30%, #21CBF3 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  padding: 0 !important;
+  flex-grow: 1;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #1976d2;
+  font-size: 1rem;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.logout-button {
+  font-weight: bold;
+  text-transform: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.logout-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.signin-button {
+  font-weight: bold;
+  text-transform: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(239, 9, 9, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.signin-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

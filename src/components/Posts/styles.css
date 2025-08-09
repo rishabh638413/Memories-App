@@ -1,0 +1,58 @@
+/* Loading spinner container */
+.loading-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+/* Main posts grid */
+.posts-container {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Grid item */
+.post-grid-item {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.post-grid-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Post wrapper box */
+.post-wrapper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid brown;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #ffffff;
+  padding: 5px;
+
+  /* Uniform sizing */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-wrapper:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure card fills the wrapper */
+.MuiCard-root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure card content grows */
+.MuiCardContent-root {
+  flex-grow: 1;
+}

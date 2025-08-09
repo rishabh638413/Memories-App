@@ -1,0 +1,42 @@
+.auth-container {
+  margin-top: 80px; /* equivalent to sx={{ mt: 10 }} */
+}
+
+.auth-paper {
+  border-radius: 24px;
+  padding: 32px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-avatar {
+  background-color: #3f51b5 !important;
+  width: 56px !important;
+  height: 56px !important;
+}
+
+.auth-title {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.auth-form {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.auth-submit {
+  text-transform: none !important;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 24px !important;
+  margin-bottom: 16px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.auth-switch {
+  text-transform: none !important;
+}

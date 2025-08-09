@@ -1,0 +1,126 @@
+/* Auth-only welcome message */
+.welcome-paper {
+  position: sticky;
+  top: 80px;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 16px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background: linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);
+  box-shadow: 0 8px 20px rgba(25, 118, 210, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  transform: translateY(20px);
+  animation: float 3s ease-in-out infinite;
+  transition: all 0.4s ease;
+}
+
+.welcome-paper:hover {
+  transform: translateY(15px);
+  box-shadow: 0 12px 30px rgba(25, 118, 210, 0.6);
+}
+
+.welcome-title {
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  letter-spacing: 0.5px;
+}
+
+.welcome-text {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.signin-btn {
+  font-weight: 700;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+  background: rgb(44, 5, 236);
+  color: #1976d2;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.signin-btn:hover {
+  background: #2e33c0;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Main form styling */
+.form-container {
+  position: sticky;
+  top: 80px;
+  max-width: 275px;
+  width: 100%;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  background: white;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-title {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.form-content {
+  margin-top: 18px;
+}
+
+.form-field {
+  margin-bottom: 16px !important;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.upload-container {
+  flex: 1.5;
+}
+
+.submit-btn {
+  flex: 1;
+  padding: 8px 0;
+}
+
+.clear-btn {
+  padding: 8px 0;
+}
+
+.upload-btn {
+  padding: 8px 0;
+}
+
+.file-hidden {
+  display: none;
+}
+
+.image-preview-container {
+  margin: 10px 0;
+}
+
+.image-preview {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@keyframes float {
+  0% { transform: translateY(20px); }
+  50% { transform: translateY(15px); }
+  100% { transform: translateY(20px); }
+}

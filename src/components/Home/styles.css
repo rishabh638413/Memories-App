@@ -1,0 +1,40 @@
+.home-container {
+  padding-top: 20px;
+}
+
+.home-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem; 
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .home-box {
+    flex-direction: row;
+  }
+}
+
+.posts-section {
+  flex: 1;
+}
+
+.form-section {
+  width: 100%;
+  position: static;
+  flex-shrink: 0;
+  height: fit-content;
+  z-index: 10;
+}
+
+@media (min-width: 900px) {
+  .form-section {
+    width: 350px;
+    position: sticky;
+    top: 80px;
+  }
+}
