@@ -12,6 +12,14 @@
   padding: 10px;
   background-color: #f8f9fa;
   min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Special styling for single post pages */
+.posts-container.single-post-page {
+  justify-content: center;
 }
 
 /* Grid item */
@@ -41,6 +49,13 @@
   flex-direction: column;
 }
 
+/* Special styling for single post */
+.post-wrapper.single-post {
+  max-width: 500px; /* Limit width for single post */
+  margin: 0 auto; /* Center the single post */
+  height: 200px;
+}
+
 .post-wrapper:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -55,4 +70,43 @@
 /* Ensure card content grows */
 .MuiCardContent-root {
   flex-grow: 1;
+}
+
+/* Pagination container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Posts info text */
+.posts-info {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 900px) {
+  .posts-container {
+    width: 100% !important;
+    padding: 5px;
+  }
+  
+  .post-wrapper.single-post {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .post-wrapper.single-post {
+    max-width: 100%;
+  }
+  
+  .pagination-container {
+    transform: scale(0.9);
+  }
 }
